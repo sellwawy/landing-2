@@ -1,0 +1,14 @@
+.site-nav {
+   display: flex;
+   gap: rem(33px);
+   color: white;
+
+   &__li {
+      color: aliceblue;
+   }
+
+   &__a {
+      color: aliceblue;
+      text-decoration: none;
+   }
+}
