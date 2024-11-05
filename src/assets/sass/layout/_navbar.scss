@@ -1,3 +1,7 @@
+.site-nav-con {
+   position: relative;
+}
+
 .site-nav {
    display: flex;
    gap: rem(33px);
@@ -8,7 +12,52 @@
    }
 
    &__a {
-      color: aliceblue;
+      color: hsl(var(--color-white));
       text-decoration: none;
    }
 }
+
+.site-nav-toggle {
+   display: none;
+}
+
+@media (max-width: 43em) {
+   .site-nav {
+      position: fixed;
+      // z-index: 1000;
+      inset: 0 0 0 30%;
+      background-color: hsla(0, 0%, 0%, 0.9);
+      flex-direction: column;
+      align-items: center;
+      padding: min(30vh, rem(100px)) rem(30px);
+      transform: translateX(100%);
+      transition: transform 0.2s ease-out;
+
+      &[data-visible='true'] {
+         transform: translateX(0%);
+      }
+   }
+
+   .site-nav-toggle {
+      display: inline-block;
+      position: absolute;
+      z-index: 9999;
+      right: 1.5rem;
+      top: 0;
+      width: rem(30px);
+      aspect-ratio: 1;
+      border: none;
+      cursor: pointer;
+   }
+}
+
+.bars-icon {
+   background: url(/assets/icons/bars.svg);
+   background-repeat: no-repeat;
+}
+.xmark-icon {
+   background: url(/assets/icons/xmark.svg);
+   background-repeat: no-repeat;
+}
+
+/* Mobile styling */

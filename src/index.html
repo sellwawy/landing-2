@@ -43,10 +43,22 @@
                   alt="Site logo" />
             </a>
          </div>
-         <!-- Navbar -->
 
+         <button
+            class="site-nav-toggle bars-icon"
+            aria-controls="primary-navigation"
+            aria-expanded="false">
+            <span class="sr-only">Menu</span>
+         </button>
+
+         <!-- Navbar -->
          <nav class="">
-            <ul role="list" class="site-nav flex" aria-label="Main">
+            <ul
+               role="list"
+               id="primary-navigation"
+               class="site-nav flex"
+               data-visible="false"
+               aria-label="Main">
                <li class="site-nav__li">
                   <a href="#home" class="site-nav__a">Home</a>
                </li>
@@ -290,12 +302,6 @@
                      </div>
                   </div>
                </div>
-            </div>
-
-            <div class="text-center margin-top-huge">
-               <a href="javascript:;" class="btn btn--green">
-                  Discover all tours
-               </a>
             </div>
          </section>
          <!-- End Tours Section -->

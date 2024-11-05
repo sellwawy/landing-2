@@ -6,6 +6,7 @@
    margin-right: auto;
    padding-left: 1.5rem;
    padding-right: 1.5rem;
+   position: relative;
 }
 .slice {
    padding-block: rem(80px);
@@ -17,6 +18,18 @@
 
 .margin-top-huge {
    margin-top: rem(30px);
+}
+
+.sr-only {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   white-space: nowrap;
+   border-width: 0;
 }
 
 // .flex {
